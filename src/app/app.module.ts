@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { SingleblogComponent } from './singleblog/singleblog.component';
 import { RouterModule, Routes } from '@angular/router';
+import { Materials } from './materials/materials.module';
 
 
 
@@ -29,6 +30,7 @@ const  appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    Materials,
     RouterModule.forRoot(appRoutes),
   ],
   providers: [],

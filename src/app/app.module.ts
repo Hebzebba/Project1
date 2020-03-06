@@ -15,6 +15,7 @@ import { Materials } from './materials/materials.module';
 
 const  appRoutes: Routes = [
   {path: '', component: LandingpageComponent},
+  {path: 'singleblog', component: SingleblogComponent}
 ];
 
 

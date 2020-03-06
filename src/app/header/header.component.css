@@ -10,3 +10,9 @@
         background-color: limegreen;
         color: white;
     }
+.navbar{
+    background-color:black !important;
+}
+.fa-hand-point-down{
+    color: white;
+}

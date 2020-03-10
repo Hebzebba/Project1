@@ -1,0 +1,14 @@
+.text-title{
+    width: 30%;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: black;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.text-title p{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+}

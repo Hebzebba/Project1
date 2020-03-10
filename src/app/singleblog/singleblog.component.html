@@ -31,6 +31,7 @@
                     <p><b>Price</b> : <span>GHC 2000</span></p>
                     <p><b>Maximum Capacity per Room</b> : 6<span></span></p>
                     <p><b>Kitchen</b> : <span>Yes</span></p>
+                    <p><b>Males/Females</b> : <span>Yes</span></p>
 
                     <button type="button" mat-raised-button class="btn-danger" data-toggle="modal" data-target="#exampleModal">
                         Make a reservation
@@ -61,16 +62,21 @@
           </mat-form-field>
           <br>
 
-          <mat-form-field style="width:100%;" appeaarance="legacy">
+          <mat-form-field style="width:100%;">
             <mat-label>Last Name</mat-label>
             <input matInput>
           </mat-form-field>
           <br>
 
-          <mat-form-field style="width:100%;" appeaarance="legacy">
+          <mat-form-field style="width:100%;">
             <mat-label>Contact</mat-label>
             <input matInput type="tel">
           </mat-form-field>
+
+          <br>
+            <p class="text-light">By Checking, you agree to the terms and coditions</p>
+          <span class="text-light">Check</span>  <mat-radio-button></mat-radio-button>
+          
           <br>
       </div>
       <div class="modal-footer">

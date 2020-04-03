@@ -1,1 +1,30 @@
-<p>dashboard works!</p>
+<mat-menu #appMenu="matMenu">
+    <a routerLink='profile'> <button mat-menu-item><span class="fas fa-pen"></span> Edit Profile</button></a>
+    <button mat-menu-item>Sign Out</button>
+  </mat-menu>
+        <mat-toolbar color="primary">
+            <span>HR | DASBOARD</span>
+            <button mat-fab class="btn-img" data-toggle="tooltip" data-placement="bottom" title="Profile" [matMenuTriggerFor]="appMenu"></button>
+        </mat-toolbar>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-2 w-100">
+            <div class="navigator">
+                <a routerLink='dash'><button mat-raised-button class="btn-width"><span class="fas fa-home"></span> Dashboard</button></a>
+                <br>
+                <br>
+                <a routerLink='update'><button mat-raised-button class="btn-width"><span class="fas fa-address-book"></span> Update data</button></a>
+                <br>
+                <br>
+                <a routerLink='profile'><button mat-raised-button class="btn-width"><span class="fas fa-pen"></span> Profile</button></a>
+                <br>
+                <br>
+                <a routerLink='readfeed'><button mat-raised-button class="btn-width"><span class="fas fa-comments "></span> Read Feeds</button></a>
+            </div>
+        </div>
+        <div class="col-10">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+

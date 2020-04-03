@@ -14,6 +14,16 @@ import { HostelsComponent } from './hostels/hostels.component';
 import { BannerComponent } from './banner/banner.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HighchartsChartModule } from 'highcharts-angular';
+import { ChartComponent } from './chart/chart.component';
+import { DasboardmoduleModule } from './dashboard/dasboardmodule/dasboardmodule.module';
+import { UpdatecontentComponent } from './updatecontent/updatecontent.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ReadfeedsComponent } from './readfeeds/readfeeds.component';
+
+
+
+
 
 
 
@@ -22,7 +32,14 @@ const  appRoutes: Routes = [
   {path: 'singleblog', component: SingleblogComponent},
   {path: 'hostels', component: HostelsComponent},
   {path: 'adminlogin', component: AdminloginComponent},
-  {path: 'dashboard', component: DashboardComponent}
+  {path: 'dashboard', component: DashboardComponent,
+  children: [{path: 'dash', component: ChartComponent},
+             {path: 'update', component: UpdatecontentComponent},
+             {path: 'profile', component: ProfileComponent},
+             {path: 'readfeed', component: ReadfeedsComponent},
+            ]
+  },
+
 ];
 
 
@@ -36,12 +53,13 @@ const  appRoutes: Routes = [
     HostelsComponent,
     BannerComponent,
     AdminloginComponent,
-    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HighchartsChartModule,
+    DasboardmoduleModule,
     Materials,
     RouterModule.forRoot(appRoutes),
   ],
